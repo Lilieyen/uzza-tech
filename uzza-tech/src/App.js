@@ -4,6 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Home from './Home';
 import LandingPage from './LandingPage'
+import About from './About'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Checkout from "./Checkout";
 import Login from "./Login";
@@ -56,6 +57,10 @@ function App() {
         <Route path="/landingPage">
           <Header />
           <LandingPage />
+        </Route>
+        <Route path="/about">
+          <Header />
+          <About />
         </Route>
         <Route path="/orders">
           <Header />

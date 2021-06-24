@@ -7,7 +7,7 @@ import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
 
 function Header() {
-    const [ { basket , user}, dispatch ] = useStateValue();
+    const [ { basket , user} ] = useStateValue();
 
     const handleAuthentication = () => {
         if (user) {
@@ -67,6 +67,13 @@ function Header() {
             <span className="header__optionLineTwo 
             header__basketCount">
                 {basket?.length}
+            </span>
+        </div>
+        </Link>
+        <Link to="/about">
+        <div className="header__about">
+            
+            <span className='header__optionLineTwo'>ABOUT 
             </span>
         </div>
         </Link>
