@@ -4,7 +4,7 @@ import { useStateValue } from "./StateProvider";
 
 function Product({ id, title, image, price, rating }) {
     // eslint-disable-next-line
-    const [{dispatch}] = useStateValue( );    
+    const [{ basket }, dispatch] = useStateValue( );    
 
     const addToBasket = () => {
             //dispatches item to the dataLayer

@@ -1,8 +1,8 @@
 import React from 'react';
 import Login from "./Login";
-import './LandingPage.css';
+import './comingSoonLP.css';
 
-function LandingPage() {
+function comingSoonLP() {
     return (
         <div className="landingPage">
             <div className="landingPage__above">
@@ -24,4 +24,4 @@ function LandingPage() {
     )
 }
 
-export default LandingPage
+export default comingSoonLP;

@@ -3,9 +3,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document A</title>
+    <title>UzzaTech Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="https://i.postimg.cc/G2fTr32L/5476406527-ab82ecf3-a46b-4899-a4f8-5c6b721d4ce5.png"></a>
+            <ul>
+                <li><a href="https://uzza-tech.web.app/">Home</a></a></li>
+                <li><a href="https://uzza-tech.web.app/landingPage">What's New</a></a></li>
+                <li><a href="uzzatech@gmail.com">Contact</a></a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just an e-market<br>It's <span>UzzaTech</span></h2>
+                <p>Connecting farmers to the world, one customer at a time!</p>
+                <a href="https://uzza-tech.web.app">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="uzzatech">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img1.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img1.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="https://i.postimg.cc/FsV91LZk/f-logo-RGB-Hex-Blue-512.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+        <div class="about">
+            <p></p>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.uzzatech').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+    <footer>
+        <h3 style="text-align:center;">ABOUT US</h3>
+          <p class="footer">
+          UzzaTech is A digital marketplace for affordable and quality farm-fresh produce in Kenya. The platform allows farmers to sell their produce and get paid well at the convenience of their home. We intend to make sure that the business transacted in our platform is genuine and secured. As we interacted with farmers, we realized many farmers produce quality fresh produce but they don’t get a comprehensive way to sell their products and are not paid well making most farmers view agriculture as a loss making venture. We also realized that most people who want to buy products from farmers do not have a direct link to the farmers. The issue of trust between farmers and buyers has been a hindrance towards healthy business. With our platform, farmers upload their products, get bids from the buyers, sell their produce to a trusted buyer and get paid through our platform.
+        
+          </p>
+          <div class="footer__image1">Author: Ewar James<br>
+            <li><a href="#"><img src="https://i.postimg.cc/mrpLtS6z/ewarpp.jpg"></a></li>
+          <a href="mailto:hege@example.com">https://www.linkedin.com/in/ewar-james-328412b7/</a></div>
+         
+          <div class="footer__image2">Author: Musa Kanneh<br>
+            <li><a href="#"><img src="https://i.postimg.cc/W3SMDxcm/musapp.jpg"></a></li>
+          <a href="mailto:hege@example.com">linkedin.com/in/musa-s-kanneh-0a47a514b/</a></div>
+          <p class="footer__image3">Author: Lilian mokaya<br>
+            <li><a href="#"><img src="https://i.postimg.cc/G2g0Vs0j/Whats-App-Image-2021-06-05-at-20-01-08-1-1.jpg"></a></li>
+          <a href="mailto:hedge@example.com">linkedin.com/in/liliannyasita</a></p>
+          </footer>
 </body>
 </html>

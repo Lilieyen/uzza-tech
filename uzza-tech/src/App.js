@@ -3,8 +3,7 @@ import './App.css';
 import Header from './Header';
 import Footer from './Footer';
 import Home from './Home';
-import LandingPage from './LandingPage'
-import About from './About'
+import comingSoonLP from './comingSoonLP'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Checkout from "./Checkout";
 import Login from "./Login";
@@ -16,7 +15,9 @@ import { Elements } from "@stripe/react-stripe-js";
 import Orders from "./Orders";
 
 //loads stripe and stores it into a promise
-const promise = loadStripe("pk_test_51J2ACtHI24BKleyffCVEQopnZWSWcNgLZdJiCG5XAMTRQ8UjXMhf2Kn9ziE9B3M1YMgN5jc4f1QXKIDsL4Jze1Op00992qvQ8e");
+const promise = loadStripe(
+  "pk_test_51J2ACtHI24BKleyffCVEQopnZWSWcNgLZdJiCG5XAMTRQ8UjXMhf2Kn9ziE9B3M1YMgN5jc4f1QXKIDsL4Jze1Op00992qvQ8e"
+  );
 
 function App() {
   const [{}, dispatch] = useStateValue();
@@ -54,13 +55,9 @@ function App() {
           <Header />
           <Checkout />
         </Route>
-        <Route path="/landingPage">
+        <Route path="/comingSoonLP">
           <Header />
-          <LandingPage />
-        </Route>
-        <Route path="/about">
-          <Header />
-          <About />
+          <comingSoonLP />
         </Route>
         <Route path="/orders">
           <Header />
